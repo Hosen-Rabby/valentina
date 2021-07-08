@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+:root{
+    --open: 'Open Sans', sans-serif;
+    --josefin: 'Josefin Sans', sans-serif;
+    --great: 'Great Vibes', cursive;
+    --purple: #744FA0;
+    --pink: #d50a51;
+    --pinklt: #FEF8FA;
+    --brown: #8a5e3b;
+    --ash: #444;
+    --ash2: #222;
+}
+
+
+.love_btn{
+    color: var(--pink);
+    font-size: 18px;
+    padding: 8px 20px;
+    border: 1px solid var(--pink);
+    border-radius: 25px;
+    display: block;
+    font-family: var(--josefin);
+    background: transparent;
+    transition: .5s;
+    display: inline-block;
+}
+
+
+.love_btn:hover{
+    color: #fff;
+    border: 1px solid var(--pink);
+    font-family: var(--josefin);
+    background: var(--pink);
+}
+
+
+p{
+    font-family: var(--open);
+    font-size: 16px;
+    color: var(--ash);
+    line-height: 26px;
+}
+
+/*navbar*/
+
+nav{
+    padding: 25px 0;
+    background: #FBDFE6;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.menu ul a{
+    color: #000;
+    font-size: 16px;
+    font-family: var(--josefin);
+    padding: 5px 20px 25px 20px;
+    transition: .5s;
+    position: relative;
+}
+
+.menu ul a:hover{
+    color: var(--pink);
+}
+.menu ul a:after{
+    position: absolute;
+    bottom: -24px;
+    left: 18%;
+    content: url(assets/img/hover-img.png);
+    opacity: 0;
+    transition: .5s;
+}
+
+.menu ul li:nth-child(2) a:after{
+    left: 21%;
+}
+.menu ul li:nth-child(4) a:after{
+    left: 24%;
+}
+
+.menu ul li:nth-child(5) a:after{
+    left: 21%;
+}
+
+.menu ul li:nth-child(6) a:after{
+    left: 25%;
+}
+
+.menu ul li:nth-child(7) a:after{
+    left: 24%;
+}
+
+.menu ul a:hover:after{
+    bottom: -10px;
+    opacity: 1;
+}
+
+/*end of navbar*/
+
+/*banner*/
+
+#banner{
+    padding-top: 50px;
+    background: var(--pinklt);
+}
+
+.banner_text{
+    padding: 120px 0;
+}
+
+
+#banner .banner_text h1{
+    font-family: var(--josefin);
+    font-size: 60px;
+    color: var(--brown);
+}
+
+
+#banner .banner_text h2{
+    font-family: var(--great);
+    font-size: 80px;
+    color: var(--pink);
+    margin-top: -40px;
+}
+
+
+#banner .banner_text p{
+    font-family: var(--open);
+    font-size: 16px;
+    color: var(--ash);
+    padding: 20px 0 40px 0;
+    line-height: 26px;
+}
+
+
+/* end of banner*/
+
+/*history*/
+
+#history{
+    padding-top: 100px;
+}
+
+.history_heading{
+    position: relative;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.history_heading:after{
+    content: url(assets/img/love-bg.png);
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.history_heading h1{
+    font-family: var(--josefin);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--ash);
+    margin: 0;
+}
+
+
+.history_heading h2{
+    font-family: var(--josefin);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--pink);
+    margin: 0;
+}
+
+
+/* end of history*/
+
+
+/*gift*/
+
+#gift{
+    background: #FFF6DA;
+    padding-top: 50px;
+    position: relative;
+    margin-top: 80px;
+}
+
+.gift_text{
+    padding-bottom: 60px;
+}
+
+
+.gift .gift_img img{
+    position: absolute;
+    top: -155px;
+    right: 0;
+    height: 650px;
+    width: 520px;
+}
+
+.gift_text .vbtn .love_btn{
+    margin-right: 15px;
+}
+
+/*end of gift*/
+
+
+/*ticket*/
+
+#ticket{
+    padding: 100px 0;
+}
+
+.ticket_text .vbtn .love_btn{
+    margin-left: 15px;
+}
+
+/* end of ticket*/
+
+
+/*offers*/
+
+#offers{
+    padding-top: 50px;
+    background: #FEF7FA;
+}
+
+.offers_box{    
+    padding: 20px 25px;
+    border-right: 3px solid transparent;
+    transition: .5s;
+    margin-bottom: 30px;
+}
+
+.offers_box:hover{
+    box-shadow: 0px 0px 6px 1px rgb(183 177 183);
+    border-right: 3px solid var(--pink);
+    background: #F1F1F1;
+}
+
+.offer_img span{
+    vertical-align: -20px;
+    font-size: 20px;
+    font-family: var(--josefin);
+    font-weight: 700;
+    padding-top: 5px;
+    margin-left: 20px;
+    color: var(--pink);
+    text-transform: capitalize;
+}
+
+.offers_box p{
+    margin-top: 20px;
+}
+
+
+.offers_text{
+    text-align: right;
+}
+
+.offers_text .love_btn{
+    margin-left: 15px;
+}
+
+.h4:after{
+    position: absolute;
+    content: url(assets/img/love-bg3.png);
+    right: -48px;
+    top: 14px;
+    /*transform: rotate(90deg);*/
+}
+
+.offers_text p{
+    text-align: right;
+}
+
+
+
+/*end of offers*/
+
+
+/*shoots*/
+
+#shoots{
+    padding-top: 60px;
+}
+
+.shoots_img{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.shoots_img .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    transition: .5s;
+    opacity: 0;
+    transform: scale(0);
+}
+
+.shoots_img:hover .overlay{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.shoots_social{
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+}
+
+.shoots_social a{
+    display: block;
+}
+
+.shoots_social i{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px 0;
+    transition: .5s;
+}
+
+.shoots_social i:hover{
+    background: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+.shoots_engage{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+.engage_items{
+    display: flex;
+}
+
+.shoots_engage h3{
+    font-family: var(--josefin);
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.item{
+    display: flex;
+    margin: 10px 0 20px 0;
+}
+
+.item span{
+    line-height: 12px;
+    font-size: 14px;
+}
+
+.item i{
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+
+/*end of shoots*/
+
+
+/*proposal */
+
+
+#proposal{
+    padding-top: 50px;
+}
+
+.feedback{
+    background: #FFFAE2;
+    padding: 25px;
+}
+
+.person{
+    display: flex;
+}
+
+.person_name{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.person_name h3{
+    font-family: var(--josefin);
+    color: var(--ash2);
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.person_name h5{
+    font-family: var(--open);
+    color: var(--ash);
+    font-size: 18px;
+}
+
+.proposal-slider{
+    position: relative;
+}
+
+.proposal-slider:after{
+    content: url(assets/img/feed-love.png);
+    position: absolute;
+    top: -40px;
+    left: -25px;
+}
+.proposal-slider:before{
+    content: url(assets/img/feed-love.png);
+    position: absolute;
+    bottom: -40px;
+    right: -25px;
+    transform: rotate(180deg);
+}
+
+/*end of proposal */
+
+
+/*contact*/
+/*
+#contact{
+    padding-top: 100px;
+}
+
+.contact_box{
+    background: var(--pink);
+    color: #fff;
+    border-radius: 50px;
+}
+
+.news{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.news .icon i{
+    font-size: 70px;
+    margin-right: 7px;
+}
+
+.news .text h2{
+    font-size: 40px;
+    font-family: var(--josefin);
+    margin: 0;
+    font-weight: 700;
+}
+.news .text p{
+    font-size: 15px;
+    font-family: var(--josefin);
+    margin: 0;
+    color: #fff;
+}
+
+.name{
+    position: relative;
+    margin-top: 35px;
+    display: flex;
+    width: 175px;
+}
+
+.form_control{
+    color: #fff;
+    background:transparent;
+    border: 1px solid #fff;
+    font-style: italic;
+}
+
+.name button{
+    color: #fff;
+    background:transparent;
+    border: 1px solid #fff;
+    padding: 0 10px;
+}
+
+input{
+    padding: 6px 10px;
+    width: 100%;
+}
+::placeholder{
+    color: #fff;
+}
+
+*/
+
+/* end of contact*/
+
+/*footer*/
+
+
+
+.footer_logo{
+    text-align: center;
+}
+
+.footer_bg{
+    padding-top: 120px;
+    background: url(assets/img/footer-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.address{
+    display: flex;
+}
+
+.address{    
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.address i{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    color: #fff;
+    background: var(--pink);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.address .info p{
+    margin: 0;
+    font-size: 15px;
+    color: var(--ash);
+}
+
+.follow{
+    text-align: center;
+}
+
+
+.follow h2{
+    font-family: var(--josefin);
+    font-size: 20px;
+    color: var(--pink);
+    font-weight: 700;
+}
+
+.follow i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid var(--pink);
+    color: var(--pink);
+    font-size: 20px;
+    background: transparent;
+    transition: .5s;
+}
+
+.follow i:hover{
+    color: #fff;
+    background: var(--pink);
+    border: 1px solid var(--pink);
+}
+
+.follow a{
+    margin: 30px 5px;
+    display: inline-block;
+}
+
+.copy{
+    text-align: center;
+    background: #FFFAE2;
+    padding: 20px 0;
+}
+
+.copy p{
+    margin: 0;
+    font-family: var(--open);
+    font-size: 16px;
+    color: var(--ash);
+}
+
+.copy a{
+    color: var(--pink)
+}
+
+
+/* end of footer*/
+
+/*counter*/
+
+
+#counter{
+    background: url(assets/img/counter-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 300px;
+    margin-top: 30px;
+    background-position: left top;
+}
+
+.cnt{
+    margin-top: 20px;
+}
+
+#countdown h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #d50a51;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+#countdown h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 32px;
+    color: #444;
+}
+
+/* end of counter*/
+
+
+#news11 {
+    margin-bottom: -60px;
+    margin-top: 100px;
+}
+/*#footer {
+    padding-top: 100px;
+}*/
+.newsletter {
+    width: 100%;
+    background: #d50a51;
+    border-radius: 65px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.newsletter input::placeholder {
+  color: #fff;
+}
+.news ul {
+    margin: 0;
+}
+.news ul li {
+    float: left;
+    list-style: none;
+}
+.news ul li h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.news ul li p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+}
+.news ul li i {
+    font-size: 50px;
+    margin-top: 8px;
+    margin-right: 7px;
+    color: #fff;
+}
+.name {
+    margin-top: 15px;
+    position: relative;
+}
+.name .form-control {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+    border-radius: 0;
+}
+.name button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    border-color: transparent;
+}
+.name button i {
+    color: #fff;
+    border-left: 1px solid #fff;
+    line-height: 34px;
+    width: 34px;
+}
+button:focus {
+    outline:none;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+
+
+
+
+/*arrow*/
+
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.slick-arrow i.right{
+    right: 0;
+    font-size: 20px;
+}

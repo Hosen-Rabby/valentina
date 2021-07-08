@@ -1,0 +1,32 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 
+    
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+ 
+    .nav_items{
+    	display: none;
+    }
+
+    #copy{
+    	font-size: 10px;
+    }
+
+    .logo_part{
+    	margin-bottom: 20px;
+    }
+    .link{
+    	margin-bottom: 20px;
+    }
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}
